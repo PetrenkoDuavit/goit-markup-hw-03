@@ -9,33 +9,10 @@
 }
 
 body {
-  font-family: 'roboto', 'sans-serif';
+  font-family: "roboto", "sans-serif";
   /*background-color: var(--main-font-color);*/
   color: var(--secondory-font-color);
   letter-spacing: 0.03em;
-}
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.section {
-  padding: 94px 0;
-}
-
-/* Сброс стилей */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-p {
-  margin: 0;
-  padding: 0;
 }
 /* Скрытые элементы */
 .list {
@@ -48,21 +25,16 @@ p {
   display: none;
 }
 
-/*----------Шапка----------*/
+/* Шапка цвет */
 .nav-header {
   background: var(--main-ligth-color);
 }
-.header-box {
-  display: flex;
-  align-items: center;
-  margin-top: 0;
-}
 /*Логотип*/
 .logo {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: calc(26 / 31);
+  line-height: 1, 19;
 }
 .logo-web {
   color: var(--accent-color);
@@ -108,7 +80,7 @@ p {
   color: var(--main-ligth-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1, 36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -118,7 +90,7 @@ p {
   background: var(--accent-color);
 }
 .hero-btn-text {
-  font-family: 'roboto';
+  font-family: "roboto";
   color: var(--main-ligth-color);
   font-weight: 700;
   font-size: 16px;
@@ -133,12 +105,13 @@ p {
   text-transform: uppercase; /*1*/
 }
 .advantage-par {
+  color: var(--main-font-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .hero-list-text {
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0, 03em;
@@ -165,7 +138,7 @@ p {
   line-height: 18.75px;
 }
 .team-position {
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.18;
   color: var(--main-font-color);
@@ -183,11 +156,11 @@ p {
   color: var(--accent-color);
 }
 
-.footer-tel {
+.footer-address {
   color: var(--main-ligth-color);
 }
 .footer-mail,
-.footer-address {
+.footer-tel {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-address,
@@ -218,7 +191,8 @@ p {
   letter-spacing: 0.06em;
 }
 .gallery-project-text {
-  font-weight: 400;
+  /* font-weight: 400; */
+  color: var(--main-font-color);
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
