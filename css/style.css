@@ -14,6 +14,15 @@ body {
   color: var(--secondory-font-color);
   letter-spacing: 0.03em;
 }
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding: 94px 0;
+}
 /* Скрытые элементы */
 .list {
   list-style: none; /* удаление точек ссылок */
@@ -26,8 +35,13 @@ body {
 }
 
 /* Шапка цвет */
-.nav-header {
+/* .nav-header {
   background: var(--main-ligth-color);
+} */
+.header-box {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
 }
 /*Логотип*/
 .logo {
