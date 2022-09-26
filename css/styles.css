@@ -35,16 +35,31 @@ p {
   margin: 0;
   padding: 0;
 }
-
-
+img {
+  /*  удаление полоски картинки */
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+address {
+  /* или через класс .footer-address */
+  font-style: normal;
+}
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
 /* Скрытые элементы */
 
 .list {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
-.qualities-title
-{
+.qualities-title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -231,10 +246,20 @@ p {
 }
 .products-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 30px;
 }
 
 /* Наша команда */
+
+.team-style {
+  background: #ffffff;
+  /* material shadow v1 */
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 
 .team {
   background: var(--section-team-bg-color);
@@ -251,7 +276,8 @@ p {
 
 .team-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 30px;
 }
 
 .team-text-box {
@@ -274,7 +300,7 @@ p {
   color: var(--main-font-color);
 }
 
-/* Подвал */
+/* ---------Подвал--------- */
 .footer-address:hover,
 .footer-address:focus,
 .footer-mail:hover,
@@ -290,9 +316,12 @@ p {
   background-color: var(--border-br-color);
 }
 
-.footer-box {
+/* .footer-box {
   display: flex;
   flex-direction: column;
+} */
+.footer-main:not(:first-child) {
+  margin-top: 20px;
 }
 
 .footer-link {
@@ -310,7 +339,7 @@ p {
 }
 
 .footer-address {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 
   font-size: 14px;
   line-height: 1.71;
@@ -369,6 +398,8 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+  color: var(--secondory-font-color);
+  letter-spacing: 0.03;
 }
 
 /* Галерея Портфолио */
@@ -407,7 +438,6 @@ p {
 
 .gallery-project-text {
   margin-top: 4px;
-
   font-size: 16px;
   line-height: 1.88;
   color: var(--main-font-color);
