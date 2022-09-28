@@ -97,7 +97,7 @@ button {
 }
 
 .contacts-item:not(:last-child) {
-  padding-right: 50px;
+  margin-right: 50px;
 }
 
 .nav-header {
@@ -247,7 +247,7 @@ button {
 .products-list {
   display: flex;
   /* justify-content: space-between; */
-  gap: 30px;
+  gap: 30px; /*вместо space-between */
 }
 
 /* Наша команда */
@@ -277,7 +277,7 @@ button {
 .team-list {
   display: flex;
   /* justify-content: space-between; */
-  gap: 30px;
+  gap: 30px; /*вместо space-between */
 }
 
 .team-text-box {
@@ -340,7 +340,6 @@ button {
 
 .footer-address {
   /* margin-top: 20px; */
-
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
@@ -350,7 +349,6 @@ button {
 .footer-mail {
   display: block;
   margin-top: 9px;
-
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
@@ -360,7 +358,6 @@ button {
 .footer-tel {
   display: block;
   margin-top: 9px;
-
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
@@ -399,7 +396,8 @@ button {
   font-size: 16px;
   line-height: 1.63;
   color: var(--secondory-font-color);
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
+  background-color: var(--section-team-bg-color);
 }
 
 /* Галерея Портфолио */
